@@ -13,4 +13,4 @@ if vim.g.hobord_gotest_loaded ~= nil then return end
 -- set neovim plugin variables
 vim.g.hobord_gotest_loaded = true
 
-vim.api.nvim_create_user_command('GenerateGoTest', function() require('gotest.generate_test').generate_function_test() end , {})
+vim.api.nvim_create_user_command('GenerateGoTest', function() require('gotest').generate_function_test() end , {})
